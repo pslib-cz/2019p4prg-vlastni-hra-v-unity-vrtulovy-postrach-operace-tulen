@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: 3d7d3ee89b8bfcc49afd047ef115e04b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cumak
+    100002: Kanon
+    100004: Kanon_1
+    100006: Klapka_Leva
+    100008: Klapka_Prava
+    100010: Kridla
+    100012: Leve_kolo
+    100014: Prave_kolo
+    100016: //RootNode
+    100018: "S\xE1n\xED"
+    100020: Trup
+    100022: Vyfuky_Leve
+    100024: Vyfuky_Prave
+    100026: Zadni_Klapka
+    100028: Zadni_Klapky
+    100030: Zadni_Kolo
+    100032: Zadni_Kridlo
+    400000: Cumak
+    400002: Kanon
+    400004: Kanon_1
+    400006: Klapka_Leva
+    400008: Klapka_Prava
+    400010: Kridla
+    400012: Leve_kolo
+    400014: Prave_kolo
+    400016: //RootNode
+    400018: "S\xE1n\xED"
+    400020: Trup
+    400022: Vyfuky_Leve
+    400024: Vyfuky_Prave
+    400026: Zadni_Klapka
+    400028: Zadni_Klapky
+    400030: Zadni_Kolo
+    400032: Zadni_Kridlo
+    2100000: Material_Kridla
+    2100002: Material_Zadni_Kridlo
+    2100004: Material_Kanon_1
+    2100006: Material_Vyfuk.001
+    2100008: Material_Zadni_Klapky
+    2100010: Material_Klapka_Prava
+    2100012: Material_Sani
+    2100014: Material_Klapka_Leva
+    2100016: Material_Kolo_Guma
+    2100018: Material_Kolo
+    2100020: Material_Kolo_Disk
+    2100022: Material_Kolo.001
+    2100024: Material_Kolo_Disk.001
+    2100026: Material_Kolo.002
+    2100028: Material_Kolo.003
+    2100030: Material_Kolo_Guma.001
+    2100032: Material_Zadni_Kridla
+    2100034: Material_Trup
+    2100036: Material_Kanon_2
+    2100038: Material_Zadni_Kolo
+    2100040: Material_Zadni_Kolo.001
+    2100042: Material_Zadni_Kolo.002
+    2100044: Material_Zadni_Kolo.003
+    2100046: Material_Zadni_Kolo.004
+    2100048: Material_Zadni_Kolo_Guma
+    2100050: Material_Zadni_Kolo_Disk
+    2100052: Material_Vyfuk
+    2100054: Material_Nos
+    2100056: Material_Vrtule_3
+    2100058: Material_Vrtule_1
+    2300000: Cumak
+    2300002: Kanon
+    2300004: Kanon_1
+    2300006: Klapka_Leva
+    2300008: Klapka_Prava
+    2300010: Kridla
+    2300012: Leve_kolo
+    2300014: Prave_kolo
+    2300016: "S\xE1n\xED"
+    2300018: Trup
+    2300020: Vyfuky_Leve
+    2300022: Vyfuky_Prave
+    2300024: Zadni_Klapka
+    2300026: Zadni_Klapky
+    2300028: Zadni_Kolo
+    2300030: Zadni_Kridlo
+    3300000: Cumak
+    3300002: Kanon
+    3300004: Kanon_1
+    3300006: Klapka_Leva
+    3300008: Klapka_Prava
+    3300010: Kridla
+    3300012: Leve_kolo
+    3300014: Prave_kolo
+    3300016: "S\xE1n\xED"
+    3300018: Trup
+    3300020: Vyfuky_Leve
+    3300022: Vyfuky_Prave
+    3300024: Zadni_Klapka
+    3300026: Zadni_Klapky
+    3300028: Zadni_Kolo
+    3300030: Zadni_Kridlo
+    4300000: Kridla
+    4300002: Zadni_Klapka
+    4300004: Kanon
+    4300006: Vyfuky_Prave
+    4300008: Zadni_Klapky
+    4300010: Klapka_Prava
+    4300012: "S\xE1n\xED"
+    4300014: Klapka_Leva
+    4300016: Leve_kolo
+    4300018: Prave_kolo
+    4300020: Zadni_Kridlo
+    4300022: Trup
+    4300024: Kanon_1
+    4300026: Zadni_Kolo
+    4300028: Vyfuky_Leve
+    4300030: Cumak
+    7400000: Cumak|CumakAction
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

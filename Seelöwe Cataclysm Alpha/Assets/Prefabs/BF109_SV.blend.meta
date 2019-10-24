@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 7f3bfae3b0a48cf47b79c50538ebc6bf
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cumak
+    100004: Kabina
+    100006: Kridelko
+    100008: Kridelko_1
+    100010: Kridla
+    100012: Kulomety
+    100014: Leve_kolo
+    100016: Prave_kolo
+    100018: Sani
+    100020: Smerovka
+    100022: Trup
+    100024: Tyce
+    100026: Vyskovka
+    100028: Zadni_Kolo
+    100030: Zadni_Kridla
+    400000: //RootNode
+    400002: Cumak
+    400004: Kabina
+    400006: Kridelko
+    400008: Kridelko_1
+    400010: Kridla
+    400012: Kulomety
+    400014: Leve_kolo
+    400016: Prave_kolo
+    400018: Sani
+    400020: Smerovka
+    400022: Trup
+    400024: Tyce
+    400026: Vyskovka
+    400028: Zadni_Kolo
+    400030: Zadni_Kridla
+    2100000: Material_Trup
+    2100002: Material_Kabina
+    2100004: Material_Cumak
+    2100006: Material_Vrtule.001
+    2100008: Material_Vrtule
+    2100010: Material_Kridla
+    2100012: Material_Zadni_Kridla
+    2100014: Material_Smerovka
+    2100016: Material_Kridelko
+    2100018: Material_Kridelko.001
+    2100020: Material_Vyskovka
+    2100022: Material_Tyce
+    2100024: Material_Kolo
+    2100026: Material_Kolo.001
+    2100028: Material_Kolo_Disk
+    2100030: Material_Kolo_Guma
+    2100032: Material_Kulomety
+    2100034: Material_Kolo.002
+    2100036: Material_Kolo.003
+    2100038: Material_Kolo_Disk.001
+    2100040: Material_Kolo_Guma.001
+    2100042: Material_Zadni_Kolo_Disk
+    2100044: Material_Zadni_Kolo_Guma
+    2100046: Material_Zadni_Kolo.001
+    2100048: Material_Zadni_Kolo.003
+    2100050: Material_Zadni_Kolo.002
+    2100052: Material_Zadni_Kolo.004
+    2100054: Material_Zadni_Kolo
+    2100056: Material_Sani
+    2300000: Cumak
+    2300002: Kabina
+    2300004: Kridelko
+    2300006: Kridelko_1
+    2300008: Kridla
+    2300010: Kulomety
+    2300012: Leve_kolo
+    2300014: Prave_kolo
+    2300016: Sani
+    2300018: Smerovka
+    2300020: Trup
+    2300022: Tyce
+    2300024: Vyskovka
+    2300026: Zadni_Kolo
+    2300028: Zadni_Kridla
+    3300000: Cumak
+    3300002: Kabina
+    3300004: Kridelko
+    3300006: Kridelko_1
+    3300008: Kridla
+    3300010: Kulomety
+    3300012: Leve_kolo
+    3300014: Prave_kolo
+    3300016: Sani
+    3300018: Smerovka
+    3300020: Trup
+    3300022: Tyce
+    3300024: Vyskovka
+    3300026: Zadni_Kolo
+    3300028: Zadni_Kridla
+    4300000: Trup
+    4300002: Kabina
+    4300004: Cumak
+    4300006: Kridla
+    4300008: Zadni_Kridla
+    4300010: Smerovka
+    4300012: Kridelko
+    4300014: Kridelko_1
+    4300016: Vyskovka
+    4300018: Tyce
+    4300020: Leve_kolo
+    4300022: Kulomety
+    4300024: Prave_kolo
+    4300026: Zadni_Kolo
+    4300028: Sani
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
