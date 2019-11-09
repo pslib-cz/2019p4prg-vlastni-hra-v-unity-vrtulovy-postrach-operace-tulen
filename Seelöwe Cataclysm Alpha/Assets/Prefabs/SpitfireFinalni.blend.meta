@@ -115,6 +115,22 @@ ModelImporter:
     4300026: Zadni_Kolo
     4300028: Vyfuky_Leve
     4300030: Cumak
+    6400000: Cumak
+    6400002: Kanon
+    6400004: Kanon_1
+    6400006: Klapka_Leva
+    6400008: Klapka_Prava
+    6400010: Kridla
+    6400012: Leve_kolo
+    6400014: Prave_kolo
+    6400016: "S\xE1n\xED"
+    6400018: Trup
+    6400020: Vyfuky_Leve
+    6400022: Vyfuky_Prave
+    6400024: Zadni_Klapka
+    6400026: Zadni_Klapky
+    6400028: Zadni_Kolo
+    6400030: Zadni_Kridlo
     7400000: Cumak|CumakAction
     9500000: //RootNode
   externalObjects: {}
@@ -150,7 +166,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
