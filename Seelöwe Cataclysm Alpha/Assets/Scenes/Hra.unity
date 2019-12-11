@@ -820,7 +820,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!64 &430467272
 MeshCollider:
@@ -852,12 +852,12 @@ MonoBehaviour:
   _wl: {fileID: 1867793975}
   _wb: {fileID: 503790730}
   _wb2: {fileID: 2059750260}
-  Wheel_power: 1500
+  Wheel_Power: 1500
   Fly_Speed: 0
-  openFlightControl: 0
-  onGround: 1
-  forward_power: 0
+  Max_Fly_Speed: 3
+  Forward_Power: 0
   Drive_Speed: 0
+  openFlightControl: 0
 --- !u!1001 &430567029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1335,7 +1335,7 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Spitfire_Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1399,7 +1399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: -0.0000000015352271, y: -0.99897015, z: 0.045372985, w: -0.000000029802322}
-  m_LocalPosition: {x: 0, y: 5.4000053, z: 15.870001}
+  m_LocalPosition: {x: 0, y: 4.67, z: 15.94}
   m_LocalScale: {x: 7.6923146, y: 7.6923056, z: 7.692313}
   m_Children: []
   m_Father: {fileID: 430961893}
@@ -2615,7 +2615,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658626688}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.93, y: -0.38, z: -1.85}
+  m_LocalPosition: {x: -0.93, y: -0.5, z: -1.85}
   m_LocalScale: {x: 1.0724005, y: 0.7457999, z: 1.0724006}
   m_Children: []
   m_Father: {fileID: 1739777047}
@@ -3184,7 +3184,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867793973}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.94, y: -0.38, z: -1.85}
+  m_LocalPosition: {x: 0.94, y: -0.5, z: -1.85}
   m_LocalScale: {x: 1.0724002, y: 0.7457999, z: 1.0724002}
   m_Children: []
   m_Father: {fileID: 1739777047}
