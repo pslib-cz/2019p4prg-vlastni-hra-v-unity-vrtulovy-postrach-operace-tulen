@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Mapa
+  - UI
+  - DestroyablePart
+  - Bullet
+  - Tree
+  - Enemy
   layers:
   - Default
   - TransparentFX
