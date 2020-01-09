@@ -9,6 +9,7 @@ public class Spitfire_Script : MonoBehaviour
     //private Collider _col;
     public WheelCollider _wr, _wl, _wb, _wb2;
     public GameObject _Spitfire;
+    public AudioSource cnn_source, mg_source;
     public float Wheel_Power;
     public float Fly_Speed;
     public float Altitude;
@@ -19,6 +20,7 @@ public class Spitfire_Script : MonoBehaviour
     public int Ammo_MG;
     public int Gun_Mode;
     public float Fuel;
+    public int Health;
     public bool openFlightControl = false;
     public bool isDestroyed = false;
     public bool isBoosting = false;
@@ -37,6 +39,7 @@ public class Spitfire_Script : MonoBehaviour
         Ammo_Cannons = 120;
         Ammo_MG = 1400;
         Gun_Mode = 0;
+        Health = 100;
         //_cam = Camera.main;
         //_col = GetComponent<Collider>();
         _rb.constraints = RigidbodyConstraints.FreezeRotation;
@@ -45,6 +48,18 @@ public class Spitfire_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Health <= 0)
+        {
+            Health = 0;
+            GameObject[] destroy = GameObject.FindGameObjectsWithTag("DestroyablePart");
+            foreach (GameObject go in destroy)
+            {
+                _rb.constraints = RigidbodyConstraints.None;
+                Destroy(go);
+                isDestroyed = true;
+            }
+        }
+
         /*Palivo - Munice*/
 
         //úbytek paliva
@@ -82,12 +97,14 @@ public class Spitfire_Script : MonoBehaviour
                 _mg2.isFiring = true;
                 _mg3.isFiring = true;
                 _mg4.isFiring = true;
+                if (mg_source.isPlaying != true) { mg_source.Play(); }
             }
 
             if (Ammo_Cannons > 0 && Gun_Mode == 2)
             {
                 _cnn2.isFiring = true;
                 _cnn1.isFiring = true;
+                if (cnn_source.isPlaying != true) { cnn_source.Play(); }
             }
 
             if (Ammo_MG > 0 && Ammo_Cannons > 0 && Gun_Mode == 0)
@@ -98,6 +115,8 @@ public class Spitfire_Script : MonoBehaviour
                 _mg4.isFiring = true;
                 _cnn2.isFiring = true;
                 _cnn1.isFiring = true;
+                if (mg_source.isPlaying != true) { mg_source.Play(); }
+                if (cnn_source.isPlaying != true) { cnn_source.Play(); }
             }
         }
 
@@ -109,6 +128,8 @@ public class Spitfire_Script : MonoBehaviour
             _mg4.isFiring = false;
             _cnn2.isFiring = false;
             _cnn1.isFiring = false;
+            mg_source.Stop();
+            cnn_source.Stop();
         }
 
         if (Input.GetMouseButton(0))
@@ -133,12 +154,14 @@ public class Spitfire_Script : MonoBehaviour
                 _mg2.isFiring = true;
                 _mg3.isFiring = true;
                 _mg4.isFiring = true;
+                if (mg_source.isPlaying != true) { mg_source.Play(); }
             }
 
             if (Ammo_Cannons > 0 && Gun_Mode == 2)
             {
                 _cnn2.isFiring = true;
                 _cnn1.isFiring = true;
+                if (cnn_source.isPlaying != true) { cnn_source.Play(); }
             }
 
             if (Ammo_MG > 0 && Ammo_Cannons > 0 && Gun_Mode == 0)
@@ -149,6 +172,8 @@ public class Spitfire_Script : MonoBehaviour
                 _mg4.isFiring = true;
                 _cnn2.isFiring = true;
                 _cnn1.isFiring = true;
+                if (mg_source.isPlaying != true) { mg_source.Play(); }
+                if (cnn_source.isPlaying != true) { cnn_source.Play(); }
             }
         }
 
@@ -160,6 +185,8 @@ public class Spitfire_Script : MonoBehaviour
             _mg4.isFiring = false;
             _cnn2.isFiring = false;
             _cnn1.isFiring = false;
+            mg_source.Stop();
+            cnn_source.Stop();
         }
 
         if (Input.GetKeyDown(KeyCode.C))
@@ -325,7 +352,7 @@ public class Spitfire_Script : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         GameObject[] destroy = GameObject.FindGameObjectsWithTag("DestroyablePart");
-        if ((collision.gameObject.CompareTag("Mapa") && Fly_Speed >= 3) || (collision.gameObject.CompareTag("Enemy")))
+        if ((collision.gameObject.CompareTag("Mapa") && Fly_Speed >= 3) || (collision.gameObject.CompareTag("Enemy")) || (collision.gameObject.CompareTag("Tree")))
         {
             foreach (GameObject go in destroy)
             {
@@ -334,6 +361,11 @@ public class Spitfire_Script : MonoBehaviour
                 isDestroyed = true;
             }
             
+        }
+
+        if (collision.gameObject.CompareTag("Bullet_Enemy"))
+        {
+            Health -= 2;
         }
     }
 

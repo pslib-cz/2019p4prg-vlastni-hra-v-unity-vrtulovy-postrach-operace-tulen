@@ -30,8 +30,11 @@ public class GunController : MonoBehaviour
                 BulletController _nbc = Instantiate(_bc, pointOfFire.position, pointOfFire.rotation) as BulletController;
                 _nbc.Bullet_Speed = _bc.Bullet_Speed;
                 _nbc.Bullet_Damage = _bc.Bullet_Damage;
-                if (_bc.Bullet_Damage >= 20) { _Spitfire.Ammo_Cannons -= 1; }
-                else { _Spitfire.Ammo_MG -= 1; }
+                if (_Spitfire != null)
+                {
+                    if (_bc.Bullet_Damage >= 20) { _Spitfire.Ammo_Cannons -= 1; }
+                    else { _Spitfire.Ammo_MG -= 1; }
+                }
             }
         }
     }

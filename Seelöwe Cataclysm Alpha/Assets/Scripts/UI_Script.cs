@@ -72,6 +72,7 @@ public class UI_Script : MonoBehaviour
         _CNNAmmo.text = ("CNN Ammo: " + _SS.Ammo_Cannons);
         _Fuel.text = ("Fuel: " + Mathf.Floor(_SS.Fuel / 60) + " Minutes");
         _Altitude.text = ("Altitude: " + Mathf.Round(_SS.Altitude * 41.5f).ToString() + " meters");
+        _Health.text = ("Health: " + _SS.Health + "%");
         
         switch (_SS.Gun_Mode)
         {

@@ -8,25 +8,48 @@ public class Enemy_Script : MonoBehaviour
     public Transform Target;
     public float Speed;
     public float turnSpeed;
+    public float fov;
+    public GunController _cnn1, _cnn2;
+    public AudioSource cnn_source;
+    public float wtf, wtf2;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Health = 20;
-        Speed = 3.5f;
-        turnSpeed = 0.2f;
+        Health = 30;
+        Speed = 4f;
+        turnSpeed = 0.3f;
+        fov = 160;
     }
 
     // Update is called once per frame
     void Update()
     {
+        wtf = Vector3.Distance(Target.position, transform.position);
+        wtf2 = Vector3.Angle(transform.forward, Target.transform.position - transform.position);
+        Turn();
+        Move();
+
         if (Health <= 0)
         {
             Destroy(this.gameObject);
         }
-        Turn();
-        Move();
+
+        if ((Vector3.Distance(Target.position, transform.position) > 20) || (Vector3.Angle(transform.forward, Target.transform.position - transform.position) < fov) || (Vector3.Angle(transform.forward, Target.transform.position - transform.position) > fov + 25))
+        {
+            _cnn1.isFiring = false;
+            _cnn2.isFiring = false;
+            cnn_source.Stop();
+        }
+
+        if ((Vector3.Distance(Target.position, transform.position) < 20) && ((Vector3.Angle(transform.forward, Target.transform.position - transform.position) >= fov) && (Vector3.Angle(transform.forward, Target.transform.position - transform.position) <= fov + 25)))
+        {
+            _cnn1.isFiring = true;
+            _cnn2.isFiring = true;
+            if (cnn_source.isPlaying != true) { cnn_source.Play(); }
+            Debug.Log("I see");
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -38,7 +61,7 @@ public class Enemy_Script : MonoBehaviour
             Debug.Log("Hit");
         }
 
-        else
+        if (!collision.gameObject.CompareTag("Bullet") && !collision.gameObject.CompareTag("Bullet_Enemy"))
         {
             Destroy(this.gameObject);
         }
