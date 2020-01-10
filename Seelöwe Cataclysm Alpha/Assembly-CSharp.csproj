@@ -102,6 +102,15 @@
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>G:/Škola/Unity/Seelöwe Cataclysm Alpha/Seelöwe Cataclysm Alpha/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>G:/Škola/Unity/Seelöwe Cataclysm Alpha/Seelöwe Cataclysm Alpha/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.MemoryProfiler">
+      <HintPath>G:/Škola/Unity/Seelöwe Cataclysm Alpha/Seelöwe Cataclysm Alpha/Library/ScriptAssemblies/Unity.MemoryProfiler.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.MemoryProfiler.Editor">
+      <HintPath>G:/Škola/Unity/Seelöwe Cataclysm Alpha/Seelöwe Cataclysm Alpha/Library/ScriptAssemblies/Unity.MemoryProfiler.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>

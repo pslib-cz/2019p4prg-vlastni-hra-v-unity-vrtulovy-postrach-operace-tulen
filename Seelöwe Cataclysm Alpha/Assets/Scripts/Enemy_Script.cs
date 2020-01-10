@@ -17,7 +17,7 @@ public class Enemy_Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Health = 30;
+        Health = 100;
         Speed = 4f;
         turnSpeed = 0.3f;
         fov = 160;
